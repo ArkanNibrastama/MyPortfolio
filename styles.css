@@ -1123,22 +1123,86 @@ section {
 }
 
 .spotlight-text {
-    text-align: center;
-    max-width: 700px;
+    text-align: left;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .spotlight-text h3 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--text-primary);
     font-weight: 700;
+    text-align: center; /* Keep the main title centered */
 }
 
 .spotlight-text p {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.spotlight-project {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.spotlight-project h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+}
+
+.spotlight-details {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.spotlight-details li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.spotlight-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.spotlight-resources, .spotlight-hire {
+    margin-top: 2rem;
+}
+
+.spotlight-resources h4, .spotlight-hire h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+}
+
+.spotlight-resources a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.spotlight-resources a:hover {
+    text-decoration: underline;
+}
+
+.spotlight-tags {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-accent);
+    font-family: 'Fira Code', monospace;
+    opacity: 0.8;
 }
 
 /* Skills Section */
